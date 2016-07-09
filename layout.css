@@ -1,0 +1,18 @@
+body{
+	background-color: Blue;
+	background: blue url(images.png);
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+}
+th{
+	color: white;
+}
+table{
+	background-color: seagreen;
+	color: antiquewhite;
+}
+h2{
+    color: goldenrod;
+    -webkit-margin-before: 2.0cm;
+    -webkit-margin-start: 270px;
+}
