@@ -1,41 +1,40 @@
-<%-- 
-    Document   : index
-    Created on : Jun 11, 2016, 1:55:10 PM
-    Author     : MyPC
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QR Code in Java Servlet</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/layout.css"/>
+    <title>QR Code in Java Servlet</title>
 </head>
 <body>
 <form action="qrservlet" method="get">
-    <p>Enter Text to create QR Code</p>
-    First Name : <input type="text" name="name" />
-    <br>
-    <br>
-    Last Name : <input type="text" name="lname" value="" />
-    <br>
-    <br>
-    Date of Birth : <input type="date" name="dob" value="" />
-    <br>
-    <br>
-    Home Address :
-    <br>
-    <br>
-    Street no. : <input type="text" name="strt" value="" />
-    Street name : <input type="text" name="strtname" value="" />
-    <br>
-    <br>
-    Near Landmark(if any) : <input type="text" name="lndmrk" value="" />
-    City : <input type="text" name="city" value="" />
-    State : <input type="text" name="state" value="" />
-    <br>
-    <br>
-    Country :<select name="country">
+    <table align ="center">
+        <th><h1>QRCode Generator</h1></th>
+        <p><h2>Enter Text To Create QR Code</h2></p>
+        <tr><td>First Name :</td><td> <input type="text" name="name" required="" /></td></tr>
+    
+    
+    <tr><td>Last Name :</td><td> <input type="text" name="lname" value="" required="" />
+    
+    
+            <tr><td>Date of Birth :</td><td> <input type="date" name="dob" value="" required="" />
+    
+    
+        <tr><td>Home Address :</td>
+    
+    
+            <td>Street no. : <input type="text" name="strt" value="" required="" /></td>
+            <td>Street name : <input type="text" name="strtname" value="" required="" /></td>
+    
+    
+            <td>Near Landmark(if any) : <input type="text" name="lndmrk" value="" /></td>
+            <td>City : <input type="text" name="city" value="" required="" /></td></tr>
+                    <tr><td>State :</td><td> <input type="text" name="state" value="" required="" /></td></tr>
+    
+    
+                    <tr><td>Country :</td><td><select name="country" required="">
         <option>Select</option>
         <option value="Afghanistan" >Afghanistan</option>
 <option value="Albania" >Albania</option>
@@ -231,20 +230,20 @@
 <option value="Yemen" >Yemen</option>
 <option value="Zambia" >Zambia</option>
 <option value="Zimbabwe" >Zimbabwe</option>
-    </select>
-
-    <br>
-    <br>
-    Pincode : <input type="text" name="code" value="" />
-    <br>
-    <br>
-    Mobile No. : <input type="text" name="num" value="" />
-    <br>
-    <br>
-    Email : <input type="email" name="email" value="" />
-    <br>
-    <br>
-    <input type="submit" value="Generate QR Code" /> 
+            </select></td></tr>
+    
+    
+                    <tr><td>Pincode :</td><td> <input type="text" name="code" value="" required="" /></td></tr>
+    
+    
+                    <tr><td>Mobile No. :</td><td> <input type="text" name="num" value="" required="" /></td></tr>
+    
+    
+                    <tr><td>Email :</td><td> <input type="email" name="email" value="" required="" /></td></tr>
+    
+    
+                    <tr><td><input type="submit" value="Generate QR Code" required="" /></td></tr>
+    </table>
 </form> 
 </body>
 </html>
